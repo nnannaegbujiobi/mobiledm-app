@@ -1,0 +1,65 @@
+<template>
+
+  <div id="app" >
+  <div class="grid">
+    <div id="box">
+         <h1>{{title}}</h1>
+      <img src="https://i.imgur.com/X6U1a55.jpg">
+     
+      <!-- <h1> Hello</h1> -->
+    <!-- <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <button v-on:click="addLife"> Wait One Hour </button>
+    <p>life{{life}}</p>
+  </div>
+  </div>
+</div>
+</template>
+
+<script>
+
+// @ is an alias to /src
+// import HelloWorld from '@/components/HelloWorld.vue'
+// import Vue from 'vue';
+// const app = new Vue
+export default {
+  name: 'app',
+  data:  {
+    life: 0,
+    title: "dog"
+
+    
+   },
+   
+   methods: {
+  addLife () {
+    this.life += 1  }
+}
+
+
+}
+
+
+</script>
+
+
+<style scoped>
+
+
+  #box {
+    background-color: ##ffffff;
+    padding: 250px;
+    margin: 20px;
+    margin-bottom: 50px;
+    outline: solid black;
+    height: 30
+  }
+
+  img {
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  
+    
+
+</style>
